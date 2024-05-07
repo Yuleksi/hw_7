@@ -59,7 +59,7 @@ a{
     position: fixed;
     background-color:var(--bg-secondary-color);
     top: 0;
-    left: 0;
+    left: 20px;
     width: 200px;
     padding: 20px;
 }
@@ -85,6 +85,9 @@ a{
 }
 
 
+.menu-list-4{
+    margin-left: 150px;
+}
 
 .fa-solid{
     padding: 0;
@@ -94,12 +97,20 @@ a{
 .catalog__menu{
     display: flex;
     max-height: 20px;
+    color: black;
+}
+
+.menu-list-2,
+.menu-list-3,
+.menu-list-4{
+    color: var(--secondary-color);
 }
 
 .catalog__categories h4{
     font-size: var(--font-xl);
     font-weight: bold;
     margin-bottom: 15px;
+    margin-left: 10px;
 }
 
 
@@ -107,6 +118,7 @@ a{
     color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
+
 }
 
 .catalog__categories a{
@@ -114,11 +126,15 @@ a{
     margin-bottom:10px;
 }
 
-.catalog__categories li{
-    margin-left: 10px;}
+
+.catalog__categories a:hover{
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
 
 .catalog__categories li:last-child {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .catalog__categories ul{
@@ -137,6 +153,7 @@ a{
 .catalog__menu ul{
     display: flex;
     flex-wrap: wrap;
+    color: var(--secondary-color);
     margin-left: 50px;
     gap: 40px;
     width: 840px;
@@ -179,31 +196,19 @@ a{
 
 
 .catalog__product{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 225px;
-    margin-bottom: 100px;
+    flex: 30%;
 }
 
 
 .catalog__products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 200px;
-    gap: 10px;
-    max-width: calc(100%- var(--categories-menu-width) - var(--catalog-gap)/3)
+    margin-top: 70px;
+    margin-left: 100px;
+    gap: 25px;
+    width: calc(100%- var(--categories-menu-full-width));
 }
 
-
-.catalog__product-image{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 220px;
-
-}
 
 .catalog__product-price{
     display: flex;
@@ -214,9 +219,14 @@ a{
 }
 
 
+.catalog__product-title{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .catalog__page{
     display: flex;
-    justify-content: flex-end;
     font-size: 13px;
     line-height: 23px;
     max-width: 400px;
@@ -238,7 +248,10 @@ a{
     border: 1px solid #dedede;
 }
 
-
+.catalog__footer{
+    display: flex;
+    margin-left: 70%;
+}
 
 
 
